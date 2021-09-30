@@ -4,10 +4,10 @@
     <title>Just testing</title>
     <script>
       var x = 0;
-      document.onload(function () {
+      document.onload = function () {
         document.getElementByID("button").addEventListener("click", btnclick);
         document.getElementByID("clicks").innerHTML = x;
-      })
+      }
       setInterval(50,uptade);
       function btnclick() {
         x += 1;
