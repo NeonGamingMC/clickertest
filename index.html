@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Just testing</title>
+    <script>
+      var x = 0;
+      document.onload(function () {
+        document.getElementByID("button").addEventListener("click", btnclick);
+        document.getElementByID("clicks").innerHTML = x;
+      })
+      
+      function btnclick() {
+        x += 1;
+      }
+    </script>
+  </head>
+  <body>
+    hi hello just testing github pages<br />
+    <button id="button">click</button>
+    <span id="clicks" />
