@@ -8,9 +8,12 @@
         document.getElementByID("button").addEventListener("click", btnclick);
         document.getElementByID("clicks").innerHTML = x;
       })
-      
+      setInterval(50,uptade);
       function btnclick() {
         x += 1;
+      }
+      function update() {
+        document.getElementByID("clicks").innerHTML = x;
       }
     </script>
   </head>
