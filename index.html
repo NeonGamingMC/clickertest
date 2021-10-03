@@ -6,7 +6,7 @@
       var x = 0;
 
       document.onload = function () {
-        document.getElementByID("button").addEventListener("click", btnclick);
+        document.getElementById("button").addEventListener("click", btnclick);
       }
       setInterval(update,50);
 
@@ -14,7 +14,7 @@
         x += 1;
       }
       function update() {
-        document.getElementByID("clicks").innerHTML = x;
+        document.getElementById("clicks").innerHTML = x;
       }
     </script>
   </head>
